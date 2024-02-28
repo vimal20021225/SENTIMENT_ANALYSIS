@@ -4,12 +4,7 @@ def translate_text(text, target_language):
     translator = Translator()
     translation = translator.translate(text, dest=target_language)
     return translation.text
-import pyttsx3
-import speech_recognition 
-engine = pyttsx3.init("sapi5")
-voices = engine.getProperty("voices")
-engine.setProperty("voice", voices[0].id)
-rate = engine.setProperty("rate",170)
+
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
