@@ -4,10 +4,6 @@ def translate_text(text, target_language):
     translator = Translator()
     translation = translator.translate(text, dest=target_language)
     return translation.text
-
-def speak(audio):
-    engine.say(audio)
-    engine.runAndWait()
 def main():
     st.title("Multi-Language Translator")
     text = st.text_input("Enter the text to translate")
