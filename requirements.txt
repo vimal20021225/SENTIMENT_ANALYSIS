@@ -1,2 +1,6 @@
-googletrans
 streamlit
+textblob
+transformers
+streamlit-extras
+torch
+tensorflow
