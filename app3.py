@@ -13,19 +13,19 @@ if st.button("Analyze the Sentiment"):
     if result == "positive":
         st.warning("The predicted sentiment is positive!!")
         rain(emoji="😄",
-             font_size=30,
+             font_size=50,
              falling_speed=2,
-             animation_length=30,)
+             animation_length=50,)
     elif result=="neutral":
         st.warning("The predicted sentiment is neutral")
         rain(emoji="😑",
-             font_size=30,
+             font_size=50,
              falling_speed=2,
              animation_length=30,)
     else:
         st.warning("The predicted sentiment is negative")
         rain(emoji="😠",
-             font_size=30,
+             font_size=50,
              falling_speed=2,
              animation_length=30,)
     st.success(result)
