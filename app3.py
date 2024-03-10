@@ -1,11 +1,8 @@
 import streamlit as st
-from textblob import TextBlob
 from transformers import pipeline
 from streamlit_extras.let_it_rain import rain
 st.title("Sentiment Analysis App")
 pipe = pipeline(model = "lxyuan/distilbert-base-multilingual-cased-sentiments-student")
-
-
 message=st.text_input("Please Enter your text")
 if st.button("Analyze the Sentiment"):
     output_model = pipe(message)
